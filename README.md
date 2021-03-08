@@ -4,7 +4,7 @@ Version 1.0 7/22/2020:
 Generic automatic download and upload for Clever
 
 Reports can be found in Cognos created by Joe Rapert
-Public Folders->Student Management System-> _SMS Staff-Built Reports->Joe rapert->Clever Files
+SMS Shared Content->Shared Between District-> _SMS Staff-Built Reports->Joe rapert->Clever Files
 Copy the folder to your My Folders and set the reports to run on a schedule, and save the report.
 
 You will need PSFTP:
@@ -13,7 +13,7 @@ Default location for the script to call PSFTP from is: c:\scripts\
 Save the file there or edit the script to match where you store PSFTP.
 
 You will also need the CognosDownload for the latest version check here:
-https://github.com/AR-k12code/CognosDownloader/blob/master/CognosDownload.ps1
+https://github.com/AR-k12code/CognosDownloader/
 
 You will need a bat file too, code for the bat is in the PS code and here:
 Default name for .bat file: Clever-SFTP.Bat
@@ -34,4 +34,4 @@ $student.Student_email = $email
 $students | Export-Csv -NoTypeInformation 'C:\scripts\clever\upload\students.csv'
 }
 
-Otherwise the script will re-create the student file by pulling students from your AD. This is predicated on you having your students ID as their employeeID or another field in AD.
+Otherwise you need a script to re-create the student file by pulling students from your AD. This is predicated on you having your students ID as their employeeID or another field in AD.
