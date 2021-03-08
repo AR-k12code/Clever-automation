@@ -4,11 +4,11 @@ Get-ChildItem -Recurse -Path C:\scripts\clever\upload -Include *.csv | Remove-It
 #Variables
 $OutputDirectory = "c:\scripts\Clever"
 #Output folder
-c:\scripts\CognosDownload.ps1 -report "enrollments" -savepath "$OutputDirectory\upload\" -ReportStudio -Cognosfolder "Clever Files"
-c:\scripts\CognosDownload.ps1 -report "schools" -savepath "$OutputDirectory\upload\" -ReportStudio -Cognosfolder "Clever Files"
-c:\scripts\CognosDownload.ps1 -report "students" -savepath $OutputDirectory\ -ReportStudio -Cognosfolder "Clever Files"
-c:\scripts\CognosDownload.ps1 -report "sections" -savepath "$OutputDirectory\upload\" -ReportStudio -Cognosfolder "Clever Files"
-c:\scripts\CognosDownload.ps1 -report "teachers" -savepath "$OutputDirectory\upload\" -ReportStudio -Cognosfolder "Clever Files"
+c:\scripts\CognosDownload.ps1 -report "enrollments" -savepath "$OutputDirectory\upload\" -Cognosfolder "Clever Files"
+c:\scripts\CognosDownload.ps1 -report "schools" -savepath "$OutputDirectory\upload\" -Cognosfolder "Clever Files"
+c:\scripts\CognosDownload.ps1 -report "students" -savepath $OutputDirectory\  -Cognosfolder "Clever Files"
+c:\scripts\CognosDownload.ps1 -report "sections" -savepath "$OutputDirectory\upload\" -Cognosfolder "Clever Files"
+c:\scripts\CognosDownload.ps1 -report "teachers" -savepath "$OutputDirectory\upload\" -Cognosfolder "Clever Files"
 #Populate student email addresses from AD, not required but is generally a good idea if you populate student email addresses in AD otherwise other scripting is required.
 #the Students file in clever pulls from the Students contactID email address.
 #Processing would be faster as an array, but that has eluded me thus far.
