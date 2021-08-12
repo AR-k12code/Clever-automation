@@ -22,7 +22,7 @@ mput *.csv
 quit
 
 To save the SSH key you will need to manually run this command and tell the console to save the key to your registry:
-c:\scripts\psftp.exe  sftp.clever.com -P 22 -l  -pw  -b "c:\scripts\clever\Upload\Clever-SFTP.Bat"
+c:\scripts\psftp.exe  sftp.clever.com -P 22 -l <username> -pw <password>  -b "c:\scripts\clever\Upload\Clever-SFTP.Bat"
 
 The Students file in clever pulls from the Students contactID email address, if you populate and trust these comment out this section with # or delete it.
 $students = Import-Csv "c:\scripts\clever\students.csv"
