@@ -5,7 +5,7 @@ Generic automatic download and upload for Clever
 
 Reports can be found in Cognos created by Joe Rapert
 SMS Shared Content->Shared Between District-> _SMS Staff-Built Reports->Joe rapert->Clever Files
-Copy the folder to your My Folders and set the reports to run on a schedule, and save the report.
+Copy the folder to your My Folders
 
 You will need PSFTP:
 https://www.chiark.greenend.org.uk/~sgtatham/putty/latest.html
